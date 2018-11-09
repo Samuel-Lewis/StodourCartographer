@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home | Stodour Cartographer</title>
+  <meta name="description" content="">
+  <meta name="author" content="Samuel Lewis">
+
+  <link rel="stylesheet" href="styles/index.scss">
+</head>
+
+<body>
+  <h1>Heading 1!</h1>
+
+  Points:
+  <input type="range" min="20" max="10000" value="2500" class="slider option" name="points" id="range-points">
+  <span id="span-points"></span>
+  <br>
+
+  Water Level:
+  <input type="range" min="-1" max="1" value="0" step="0.05" class="slider option" name="water" id="range-water">
+  <span id="span-water"></span>
+  <br>
+
+  Scale:
+  <input type="range" min="0.0001" max="1000" value="300" class="slider option" name="scale" id="range-scale">
+  <span id="span-scale"></span>
+  <br>
+
+  Octaves:
+  <input type="range" min="1" max="10" value="3" class="slider option" name="octaves" id="range-octaves">
+  <span id="span-octaves"></span>
+  <br>
+
+  Lacunarity:
+  <input type="range" min="1" max="10" value="2" class="slider option" name="lacunarity" id="range-lacunarity">
+  <span id="span-lacunarity"></span>
+  <br>
+
+  Persistance:
+  <input type="range" min="0" max="1" value="0.5" step="0.05" class="slider option" name="persistance" id="range-persistance">
+  <span id="span-persistance"></span>
+  <br>
+
+  Fall Off:
+  <input type="range" min="0" max="5" value="2" class="slider option" name="falloff" id="range-falloff">
+  <span id="span-falloff"></span>
+  <br>
+
+  <button id="generate">Generate!</button>
+
+  <div id="debug"></div>
+
+  <br>
+  <br>
+  <svg id="svg-base" width="800" height="800" xmlns="http://www.w3.org/2000/svg"></svg>
+
+  <script src="scripts/index.js"></script>
+</body>
+</html>
